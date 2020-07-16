@@ -1,0 +1,50 @@
+.keypad {
+  display: flex;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+}
+
+[type='button'] {
+  width: 100px;
+  height: 80px;
+  border-left: 1px solid #808080;
+  border-bottom: 1px solid #808080;
+  font-size: 24px;
+  transition: background-color 300ms ease-in-out;
+}
+
+.zero {
+  width: 200px;
+}
+
+.operations {
+  width: 100px;
+}
+
+.operations [type='button'] {
+  border-right: 1px solid #808080;
+  background-color: green;
+  color: #ffffff;
+  transition: all 300ms ease-in-out;
+}
+
+[type='button']:hover {
+  background-color: #ffffff;
+}
+
+.operations [type='button']:hover {
+  color: #000000;
+}
+
+[type='button']:active {
+  transform: translate(-1px, -1px);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.4);
+}
+
+[type='button']:focus {
+  outline: none;
+}
